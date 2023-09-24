@@ -23,7 +23,7 @@ public class FunThreadSecond implements Runnable {
         try {
             Thread.sleep(100);// 睡眠100毫秒
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);// 抛出运行时异常
+            e.printStackTrace();// 打印异常堆栈
         }
         System.out.println("Hello FunTester!    " + Thread.currentThread().getName());// 打印线程名称
     }
